@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Flask App{% endblock %}
+
+{% block content %}
+<section class="hero py-5 text-center">
+  <div class="container">
+    <h1 class="display-6">Hello, World!</h1>
+    <p class="lead text-muted">This page is served from templates/index.html at the / route.</p>
+    <p><a class="btn btn-primary btn-lg" href="{{ url_for('login') }}">Go to Login</a></p>
+  </div>
+</section>
+{% endblock %}
